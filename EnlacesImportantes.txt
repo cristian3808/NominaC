@@ -1,0 +1,11 @@
+https://www.youtube.com/results?search_query=Crear+APIREST+con+php+-+sin+FRAMEWORKS+%231
+
+https://www.webnivel.net/simple-api-rest-con-php/
+
+https://codigonaranja.com/crear-restful-web-service-php
+
+https://code.tutsplus.com/es/tutorials/how-to-build-a-simple-rest-api-in-php--cms-37000
+
+https://codigonaranja.com/como-usar-restful-web-services-con-php
+
+https://www.techiediaries.com/php-rest-api/
