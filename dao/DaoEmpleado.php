@@ -5,5 +5,6 @@ interface DaoEmpleado{
     public function eliminar(empleado $a);
     //public function buscar($campo,$dato);
     public function listar();
+    public function obtenerpordocu(empleado $a);
 }
 ?>

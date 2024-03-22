@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar Usuario</title>
-</head>
-
-<body>
-    <h2>Modificar Usuario</h2>
-    <form action="../controlador/controladormodiusu.php" method="POST">
+<h2>Modificar Usuario</h2>
+<form action="../controlador/controladormodiusu.php" method="POST">
+    <div class="left-column">
         <label for="id_usuario">id usuario:</label>
         <input type="text" id="id_persona" name="id_persona" value="<?php echo $usuario->getIdPersona(); ?>"><br><br>
 
@@ -22,7 +12,9 @@
 
         <label for="apellido1">Apellido Paterno:</label>
         <input type="text" id="apellido1" name="apellido1" value="<?php echo $usuario->getApellido1(); ?>"><br><br>
+    </div>
 
+    <div class="right-column">
         <label for="apellido2">Apellido Materno:</label>
         <input type="text" id="apellido2" name="apellido2" value="<?php echo $usuario->getApellido2(); ?>"><br><br>
 
@@ -37,9 +29,7 @@
 
         <label for="fecha_Nacimiento">Fecha de Nacimiento:</label>
         <input type="text" id="fecha_nacimiento" name="fecha_Nacimiento" value="<?php echo $usuario->getFecha_Nacimiento(); ?>"><br><br>
+    </div>
 
-        <input type="submit" name="boton" value="Modificar">
-    </form>
-</body>
-
-</html>
+    <input type="submit" name="boton" value="Modificar">
+</form>

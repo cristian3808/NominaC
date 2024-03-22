@@ -10,14 +10,19 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+
 h1 {
     text-align: center;
     margin-top: 50px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .menu {
     width: 100%;
-    background-color: #333;
+    background-color: #2CAAB8;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -32,46 +37,53 @@ h1 {
     text-decoration: none;
 }
 
-.section {
-    margin: 50px 200px;
+form {
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
-    background-color: mintcream;
+    background-color: #fff;
 }
 
-.section-h1 {
-    font-size: 25px;
-}
-
-.section-h2 {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.p {
-    font-size: 15px;
+form label {
+    display: block;
+    margin-bottom: 10px;
 }
 
 form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form textarea {
-    border: 1px solid #536dfe;
-    border-radius: 2px;
-    padding: 16px;
+form input[type="password"] {
     width: 100%;
-    display: block;
+    padding: 10px;
     margin-bottom: 20px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    color: #141938;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="password"]:focus,
-form textarea:focus {
-    border: 2px solid #536dfe; /* Se añadió el grosor de borde al enfocar */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+form p a:hover {
+    text-decoration: underline;
 }

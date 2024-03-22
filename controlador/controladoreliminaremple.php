@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/estilos.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Eliminar Usuario</title>
+    <title>Eliminar Empleado</title>
 </head>
 <body>
 <?php 
-require('../dao/DaoUsuarioImpl.php');
-$dao = new c();
+require('../dao/DaoEmpleadoImpl.php');
+$dao = new d();
 
 if(isset($_GET['id'])) {
     $ident = $_GET['id'];
@@ -20,9 +20,9 @@ if(isset($_GET['id'])) {
     if($empleado) {
         $dao->eliminar($empleado);
         
-        echo "<p>Usuario eliminado exitosamente.</p>";
+        echo "<p>Empleado eliminado exitosamente.</p>";
     } else {
-        echo "<p>Error: Usuario no encontrado.</p>";
+        echo "<p>Error: Empleado no encontrado.</p>";
     }
 }
 

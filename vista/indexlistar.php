@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <link rel="stylesheet" href="../styles/estilolistarusuario.css">
     
     <title>Listar</title>    
 </head>
@@ -45,8 +45,13 @@
                         echo "<td>". $key->getFecha_Nacimiento() . "</td>";
                         echo '<td><a href="controladormodiusu.php?id=' . $key->getIdPersona() . '">Editar</a></td>';
                         echo '<td><a href="controladoreliminarusu.php?id=' . $key->getIdPersona() .'">Borrar</a></td>'; 
-                        echo "</tr>";                 
+                        echo "</tr>";    
+                        
+                        
+                            
                     }
+                    
+
                 ?>
                 </tbody>
             </table>

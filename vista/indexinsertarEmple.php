@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="estilos.css"> -->
+  
 </head>
 <body>
     <section class="section">
     
     <div class="wrap">
     <form action="../controlador/controladorregistroEmple.php", method="GET">
+
+
+    <h1>REGISTRAR EMPLEADO</h1>
+
+    <label for="">DOCUMENTO ID </label>    
+    <input type="text" name="id_empleado" id="id_empleado" class="form-control">
+
     <label for="">Primer Nombre</label>    
     <input type="text" name="nombre1_e" id="nombre1" class="form-control">
     

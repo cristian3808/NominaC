@@ -54,7 +54,7 @@ class c extends Conexion implements DaoUsuario {
             
             $stmt = $this->getCnx()->prepare($sql);
             $stmt->execute([$nombre1, $nombre2, $apellido1, $apellido2, $genero, $direccion, $telefono, $fecha_Nacimiento, $id_persona]);
-        
+            
             if ($stmt->rowCount() > 0) {
                 echo "Registro modificado exitosamente.";
             } else {

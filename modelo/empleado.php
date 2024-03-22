@@ -1,5 +1,6 @@
 <?php
 class empleado{
+private $id_empleado;
 private $nombre1_e;
 private $nombre2_e;
 private $apellido1_e;
@@ -11,7 +12,8 @@ private $correo_e;
 private $fecha_ingreso_e;
 private $fecha_Nacimiento_e;
 
-function __construct($nombre1_e,$nombre2_e,$apellido1_e,$apellido2_e,$genero_e,$direccion_e,$telefono_e,$correo_e,$fecha_ingreso_e,$fecha_Nacimiento_e){
+function __construct($id_empleado,$nombre1_e,$nombre2_e,$apellido1_e,$apellido2_e,$genero_e,$direccion_e,$telefono_e,$correo_e,$fecha_ingreso_e,$fecha_Nacimiento_e){
+    $this->id_empleado=$id_empleado;
     $this->nombre1_e=$nombre1_e;
     $this->nombre2_e=$nombre2_e;
     $this->apellido1_e=$apellido1_e;
@@ -22,6 +24,14 @@ function __construct($nombre1_e,$nombre2_e,$apellido1_e,$apellido2_e,$genero_e,$
     $this->correo_e=$correo_e;
     $this->fecha_ingreso_e=$fecha_ingreso_e;
     $this->fecha_Nacimiento_e=$fecha_Nacimiento_e;
+}
+
+function getIdEmpleado() {
+    return $this->id_empleado;
+}
+
+function setIdEmpleado($id_empleado) {
+    $this->id_empleado = $id_empleado;
 }
 
 function getNombre1_e() {
@@ -90,19 +100,19 @@ function setCorreo_e($correo_e){
     $this->correo_e = $correo_e;
 }
 
-    function  getFecha_ingreso_e() {
-        return $this->fecha_ingreso_e;
+function  getFecha_Ingreso_e() {
+    return $this->fecha_ingreso_e;
 
 }
 
-function  setFecha_ingreso($fecha_ingreso_e) {
+function  setFecha_Ingreso_e($fecha_ingreso_e) {
     $this->fecha_ingreso_e = $fecha_ingreso_e;
 }
 function  getFecha_Nacimiento_e() {
     return $this->fecha_Nacimiento_e;
 }
 
-function  setFecha_Nacimiento($fecha_Nacimiento_e) {
+function  setFecha_Nacimiento_e($fecha_Nacimiento_e) {
     $this->fecha_Nacimiento_e = $fecha_Nacimiento_e;
 }
 }

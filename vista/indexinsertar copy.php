@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
 </head>
 <body>
     <section class="section">
@@ -13,8 +13,7 @@
     <div class="wrap">
     <form action="../controlador/controladorregistro.php", method="GET">
 
-    <h1>REGISTRAR USUARIO</h1>
-
+    
     <label for="">IDENTIDAD </label>    
     <input type="text" name="id_persona" id="id_persona" class="form-control">
 
