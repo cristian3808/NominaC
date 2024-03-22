@@ -9,8 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estilosindex.css"> 
-    <link rel="stylesheet" href="styles/style.css"> 
+    <link rel="stylesheet" href="styles/estiloindex.css"> 
 </head>
 <body>
     <center>
@@ -18,7 +17,6 @@
     <h1>SISTEMA DE NOMINA</h1>  
         <table class="menu">
             <tr>
-                <td><a href="index.php">Inicio de Sesión</a></td>
                 <td><a href="indexv1.php">DAO PRINCIPAL</a></td>
             </tr>
         </table>
